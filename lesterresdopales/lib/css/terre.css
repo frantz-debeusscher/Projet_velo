@@ -1,0 +1,59 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/restaurant2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h2 {
+    font-size: 4rem;
+    font-family: Lobster, sans-serif;
+}
+
+.img4 {
+    margin-top: 10rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    line-height: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 100;
+    padding: 3.5rem;
+}
+
+.text {
+    font-size: 1.8rem;
+    letter-spacing: 0.15rem;
+    margin: 0 3rem;
+    line-height: 2.5rem;
+}
+
+.learn {
+    background: transparent;
+    margin-top: 5rem;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    padding: 2.5rem;
+    font-weight: 500;
+    width: 25rem;
+    transition: all 0.4s ease-in;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+
+.learn:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.carouselMenadel {
+    width: 300px;
+    overflow: hidden;
+}

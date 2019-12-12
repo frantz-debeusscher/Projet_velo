@@ -1,0 +1,431 @@
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        /* couleur de la nav et du footer  */
+        
+        .navbar,
+        .page-footer {
+            background-color: rgb(63, 9, 9);
+        }
+        
+        header {
+            background: url('../img/restaurant-loos_en_ghoelle.jpg');
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .text-intro {
+            overflow: auto;
+            height: 18rem;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-family: Lobster, sans-serif;
+            font-size: 2rem;
+            margin: 0;
+            position: relative;
+            letter-spacing: 3px;
+            width: 100%;
+        }
+        
+        .titre {
+            text-align: center;
+            color: #fff;
+            font-family: Lobster, sans-serif;
+            font-size: 6rem;
+            margin: 0;
+            position: relative;
+            letter-spacing: 4px;
+            width: 100%;
+        }
+        
+        .noir {
+            padding-top: 15rem;
+        }
+        
+        .noir_loos {
+            padding-top: 10rem;
+        }
+        
+        .mentions {
+            top: 5rem;
+        }
+        
+        .fond_intro,
+        .mentions {
+            background: rgba(0, 0, 0, 0.6);
+        }
+        
+        .box {
+            position: relative;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 3.5rem;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            font-family: Lobster, sans-serif;
+        }
+        
+        .text {
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+        }
+        
+        .learn {
+            background: transparent;
+            margin-top: 2rem;
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            padding: 1rem;
+            width: 12rem;
+            transition: all 0.4s ease-in;
+            font-size: 0.8rem;
+        }
+        
+        .learn:hover {
+            background: rgba(255, 255, 255, 0.9);
+            color: black;
+        }
+        /* Section 1*/
+        
+        .img1 {
+            background: url('../img/table_de_cocagne .jpg');
+            height: 70rem;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        /* Deuxieme section */
+        
+        .img2 {
+            background: url('../img/restaurant-loos_en_ghoelle.jpg');
+            height: 70rem;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        /* Troisieme section */
+        
+        .img3 {
+            background-image: url("../img/traiteur.jpg");
+            height: 70rem;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        /* quatrième section */
+        
+        .img4 {
+            background-image: url("../img/traiteur1.jpg");
+            height: 50rem;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .img5 {
+            background-image: url("../img/restaurant-loos_en_ghoelle.jpg");
+            height: 108rem;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .img6 {
+            background-image: url("../img/table_de_cocagne .jpg");
+            height: 90rem;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .img7 {
+            background-image: url("../img/traiteur1.jpg");
+            height: 100rem;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .img8 {
+            background-image: url("../img/traiteur1.jpg");
+            height: 120rem;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        /* Animation */
+        
+        .box1 {
+            opacity: 0;
+            transition: all 0.4s linear;
+        }
+        
+        .box2 {
+            opacity: 0;
+            transition: all 0.4s linear;
+        }
+        
+        .box3 {
+            opacity: 0;
+            transition: all 0.4s linear;
+        }
+        
+        .box4 {
+            opacity: 0;
+            transition: all 0.4s linear;
+        }
+        
+        .fade-in {
+            opacity: 1;
+        }
+        /* fleche  */
+        /* Faire sautiller la flèche de défilement */
+        
+        .arrow {
+            opacity: 0;
+            position: absolute;
+            left: 50%;
+            top: 80%;
+            transform-origin: 50% 50%;
+            transform: translate3d(-50%, -50%, 0);
+        }
+        
+        .arrow-first {
+            animation: arrow-movement 2s ease-in-out infinite;
+        }
+        
+        .arrow-second {
+            animation: arrow-movement 2s 1s ease-in-out infinite;
+        }
+        
+        .arrow:before,
+        .arrow:after {
+            background: #fff;
+            content: '';
+            display: block;
+            height: 3px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30px;
+        }
+        
+        .arrow:before {
+            transform: rotate(45deg) translateX(-23%);
+            transform-origin: top left;
+        }
+        
+        .arrow:after {
+            transform: rotate(-45deg) translateX(23%);
+            transform-origin: top right;
+        }
+        
+        @keyframes arrow-movement {
+            0% {
+                opacity: 0;
+                top: 45%;
+            }
+            70% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        /* footer */
+        
+        .modif_footer {
+            font-size: x-small;
+        }
+        
+        .carouselMenadel {
+            width: 300px;
+            overflow: hidden;
+        }
+        /* menu menadel  */
+        
+        .accordion.accordion-3 {
+            border-radius: 5px;
+        }
+        
+        .accordion.accordion-3 p {
+            font-size: 1rem;
+        }
+        
+        .accordion.accordion-3 .fa.fa-angle-down {
+            margin-top: -10px;
+        }
+        
+        .textDescriptif {
+            line-height: 0.9rem
+        }
+        /* espace dans la card offre reguliere */
+        
+        .card-body {
+            padding: 0.5rem!important;
+        }
+        /* mangez bougez*/
+        
+        .manger {
+            font-size: 0.7rem;
+        }
+        /* telephone_maison  */
+        
+        .appel_maison {
+            display: none;
+        }
+        /* les  @ media */
+        
+        @media (max-width: 2800px) {
+            .img5 {
+                height: 110rem;
+            }
+            .img6 {
+                height: 110rem;
+            }
+            .img7 {
+                height: 110rem;
+            }
+        }
+        
+        @media (max-width: 1200px) {
+            .img5 {
+                height: 120rem;
+            }
+            .img6 {
+                height: 120rem;
+            }
+            .img7 {
+                height: 110rem;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .titre {
+                font-size: 2rem;
+            }
+            .img4 {
+                height: 60rem;
+            }
+            .img5 {
+                height: 145rem;
+            }
+            .img6 {
+                height: 140rem;
+            }
+            .img7 {
+                height: 150rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .titre {
+                font-size: 2rem;
+            }
+            .img1 {
+                height: 70rem;
+            }
+            .img2 {
+                height: 70rem;
+            }
+            .img3 {
+                height: 70rem;
+            }
+            .img4 {
+                height: 66rem;
+            }
+            .img5 {
+                height: 190rem;
+            }
+            .img6 {
+                height: 195rem;
+            }
+            .img7 {
+                height: 210rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .titre {
+                font-size: 3rem;
+            }
+            #typo_resto {
+                font-size: 2rem;
+            }
+            .img1 {
+                height: 80rem;
+            }
+            .img2 {
+                height: 80rem;
+            }
+            .img3 {
+                height: 80rem;
+            }
+            .img4 {
+                height: 60rem;
+            }
+            .img5 {
+                height: 185rem;
+            }
+            .img6 {
+                height: 190rem;
+            }
+            .img7 {
+                height: 230rem;
+            }
+            h1 {
+                font-size: 3rem;
+            }
+            .box {
+                padding: 1rem;
+            }
+            .appel_maison {
+                display: block;
+            }
+        }
+        
+        @media (max-width: 440px) {
+            .titre,
+            #typo_resto {
+                font-size: 2rem;
+            }
+            .box {
+                padding: 1rem;
+            }
+            .img1 {
+                height: 80rem;
+            }
+            .img2 {
+                height: 70rem;
+            }
+            .img3 {
+                height: 70rem;
+            }
+            .img4 {
+                height: 60rem;
+            }
+            .img5 {
+                height: 210rem;
+            }
+            .img6 {
+                height: 225rem;
+            }
+            .img7 {
+                height: 320rem;
+            }
+            .img8 {
+                height: 270rem;
+            }
+            .appel_maison {
+                display: block;
+            }
+        }

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://lestablesdecocagne.fr/sitemapp.xml
